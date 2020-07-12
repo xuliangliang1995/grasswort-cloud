@@ -1,0 +1,16 @@
+server:
+  port: 9999
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          group: default
+          destination: raw
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
